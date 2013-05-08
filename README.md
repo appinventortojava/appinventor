@@ -3,6 +3,8 @@ appinventor
 
 This version and all versions of App Inventor have two parts, the web interface and a build server (that packages apks, etc.)
 
+To download a copy, click on the download Zip icon at the top left hand side
+
 Running a local version of Web Interface:
 
 Cd into the appinventor folder
