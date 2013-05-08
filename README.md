@@ -34,8 +34,8 @@ Start command : sudo /etc/init.d/android_buildserver start
 Stop command :  sudo /etc/init.d/android_buildserver stop 
 
 Files mailny used for the build server:
-Projectbuilder
+Projectbuilder (where the parser/code generator is called) appinventor/buildserver/src/com/google/appinventor/buildserver/PrjectBuilder.java
 
 To update the about page:
-Show about command ( for about page )
-Design toolbar ( for adding the drop down menu to download java file etc )
+Show about command ( for about page ) appinventor/appengine/src/com/google/appinventor/client/explorer/commands/ShowAboutCommnad.java
+Design toolbar ( for adding the drop down menu to download java file etc ) appinventor/appengine/src/com/google/appinventor/client/DesignToolbar.java
