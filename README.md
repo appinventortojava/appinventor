@@ -1,16 +1,22 @@
 appinventor
 ===========
 
-Appinventor code
+This version and all versions of App Inventor have two parts, the web interface and a build server (that packages apks, etc.)
 
-To Run a Local Copy of the appinventor web interface and buildserver: 
+Running a local version of Web Interface:
 
 Cd into the appinventor folder
-The complile the code by running "ant"
+Complile the code by running "ant"
 Once complied you can launch the web interface with the following command 
 "<your appengine SDK folder>/appengine-java-sdk-1.6.4.1/bin/dev_appserver.sh --port=8888 --address=0.0.0.0 appengine/build/war/"
-In another terminal window you will need to cd into appinventor/buildserver and run the command "ant RunLocalBuildServer"
-once you get confirmation from both side ths servers are running in a web browser you can go to "localhost:8888" and start using our version of appinventor
+
+BUILD SERVER
+
+In another terminal window:
+cd into appinventor/buildserver
+Run the command "ant RunLocalBuildServer"
+once you get confirmation go to a web browser and run,
+"localhost:8888" and start using our version of appinventor
 
 To Deploy to appspot: 
 
