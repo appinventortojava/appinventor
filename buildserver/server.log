@@ -1,0 +1,171 @@
+Buildfile: c:\workspace\AppInventor\appinventor\buildserver\build.xml
+
+init:
+
+common_CommonUtils:
+
+init:
+
+CommonUtils:
+
+common_CommonVersion:
+
+init:
+
+CommonVersion:
+
+CopyToRunLibDir:
+
+blockslib_OpenBlocks:
+
+init:
+
+components_XmlComponentDescription:
+
+init:
+
+CommonConstants:
+
+ComponentProcessingLib:
+
+HtmlEntities:
+
+AnnotationProcessors:
+
+AndroidRuntime:
+
+XmlComponentDescription:
+
+common_CommonVersion:
+
+init:
+
+CommonVersion:
+
+OpenBlocks:
+
+YailGenerator:
+
+components_AndroidRuntime:
+
+init:
+
+CommonConstants:
+
+HtmlEntities:
+
+AndroidRuntime:
+
+components_ComponentList:
+
+init:
+
+CommonConstants:
+
+ComponentProcessingLib:
+
+HtmlEntities:
+
+AnnotationProcessors:
+
+AndroidRuntime:
+
+ComponentList:
+
+BuildServer:
+
+RunLocalBuildServer:
+     [java] Dec 9, 2012 3:32:19 PM com.sun.jersey.api.core.ClasspathResourceConfig init
+     [java] INFO: Scanning for root resource and provider classes in the paths:
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\BuildServer.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\CommonUtils.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\CommonVersion.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\FastInfoset-1.2.2.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\activation-1.1.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\args4j-2.0.18.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\asm-3.1.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\commons-io-2.0.1.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\grizzly-servlet-webserver-1.9.18-i.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\guava-11.0.1.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\http-20070405.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\jackson-core-asl-1.9.4.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\jaxb-api-2.1.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\jaxb-impl-2.1.10.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\jaxb-xjc.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\jdom-1.0.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\jersey-bundle-1.3.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\jersey-multipart-1.3.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\jettison-1.1.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\json.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\jsr311-api-1.1.1.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\localizer.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\mail-1.4.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\rome-0.9.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\sdklib.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\stax-api-1.0-2.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\wadl-cmdline.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\wadl-core.jar
+     [java]   c:\workspace\AppInventor\appinventor\buildserver\build\run\lib\wadl2java.jar
+     [java] Dec 9, 2012 3:32:21 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+     [java] INFO: Root resource classes found:
+     [java]   class com.google.appinventor.buildserver.BuildServer
+     [java] Dec 9, 2012 3:32:21 PM com.sun.jersey.api.core.ScanningResourceConfig init
+     [java] INFO: No provider classes found.
+     [java] Dec 9, 2012 3:32:21 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+     [java] INFO: Initiating Jersey application, version 'Jersey: 1.3 06/17/2010 05:04 PM'
+     [java] Dec 9, 2012 3:32:22 PM com.sun.grizzly.Controller logVersion
+     [java] INFO: Starting Grizzly Framework 1.9.18-i - Sun Dec 09 15:32:22 PST 2012
+     [java] Dec 9, 2012 3:32:22 PM com.google.appinventor.buildserver.BuildServer main
+     [java] INFO: App Inventor Build Server - Version: v130b-4-gf0cd523
+     [java] Dec 9, 2012 3:32:22 PM com.google.appinventor.buildserver.BuildServer main
+     [java] INFO: App Inventor Build Server - Git Fingerprint: f0cd5235a628e4fba31d6ac4e7147f8ab4a6a168
+     [java] Dec 9, 2012 3:32:22 PM com.google.appinventor.buildserver.BuildServer main
+     [java] INFO: Running at: http://192.168.1.68:9990/buildserver
+     [java] Dec 9, 2012 3:32:22 PM com.google.appinventor.buildserver.BuildServer main
+     [java] INFO: Maximum simultanous builds = unlimited!
+     [java] Dec 9, 2012 3:32:22 PM com.google.appinventor.buildserver.BuildServer main
+     [java] INFO: Visit: http://192.168.1.68:9990/buildserver/health for server health
+     [java] Dec 9, 2012 3:32:22 PM com.google.appinventor.buildserver.BuildServer main
+     [java] INFO: Visit: http://192.168.1.68:9990/buildserver/vars for server values
+     [java] Dec 9, 2012 3:32:22 PM com.google.appinventor.buildserver.BuildServer main
+     [java] INFO: Server running
+     [java] Dec 9, 2012 3:32:24 PM com.google.appinventor.buildserver.BuildServer buildEclipseProjectFromZipAsync
+     [java] INFO: requiredHosts is not set, no restriction on callback url.
+     [java] Dec 9, 2012 3:32:24 PM com.google.appinventor.buildserver.BuildServer$2 run
+     [java] INFO: START NEW BUILD 1
+     [java] Dec 9, 2012 3:32:24 PM com.google.appinventor.buildserver.BuildServer checkMemory
+     [java] INFO: Build 1 current used memory: 8031544 bytes
+     [java] Dec 9, 2012 3:32:24 PM com.google.appinventor.buildserver.ProjectBuilder buildEclipseProject
+     [java] INFO: temporary project root: C:\Users\RAMYAG~1\AppData\Local\Temp\1355095944266_0.5817484147674141-0
+     [java] Dec 9, 2012 3:32:24 PM com.google.appinventor.buildserver.Execution execute
+     [java] INFO: ____Executing c:\Program Files\Java\jdk1.6.0_37\jre/bin/java -mx1024M -cp C:\Users\RAMYAG~1\AppData\Local\Temp\app-inventor-to-eclipse-project2592867738226396214.jar AppInventorToEclipseProject C:\Users\RAMYAG~1\AppData\Local\Temp\1355095944266_0.5817484147674141-0\rep7819761521059577595tmp6481005558204852527.zip C:\Users\RAMYAG~1\AppData\Local\Temp\1355095944266_0.5817484147674141-0\output
+     [java] Dec 9, 2012 3:32:25 PM com.google.appinventor.buildserver.BuildServer buildEclipseProject
+     [java] INFO: Build output: 
+     [java] Dec 9, 2012 3:32:25 PM com.google.appinventor.buildserver.BuildServer buildEclipseProject
+     [java] INFO: Build error output: 62 [main] ERROR org.reflections.Reflections - could not create Vfs.Dir from url. ignoring the exception and continuing
+     [java] org.reflections.ReflectionsException: could not create Dir using org.reflections.vfs.Vfs$DefaultUrlTypes$2 from url jar:file:/C:/Users/Ramya%20Gadiyaram/AppData/Local/Temp/app-inventor-to-eclipse-project2592867738226396214.jar!/
+     [java] 	at org.reflections.vfs.Vfs.fromURL(Vfs.java:98)
+     [java] 	at org.reflections.vfs.Vfs.fromURL(Vfs.java:88)
+     [java] 	at org.reflections.Reflections.scan(Reflections.java:199)
+     [java] 	at org.reflections.Reflections.<init>(Reflections.java:91)
+     [java] 	at org.translator.java.blocks.BlocksFactory.<init>(BlocksFactory.java:56)
+     [java] 	at org.translator.java.blocks.BlocksPage.<init>(BlocksPage.java:44)
+     [java] 	at org.translator.java.AppInventorScreen.loadPages(AppInventorScreen.java:120)
+     [java] 	at org.translator.java.AppInventorScreen.loadBlocksFile(AppInventorScreen.java:104)
+     [java] 	at org.translator.java.AppInventorProject.loadSourceFile(AppInventorProject.java:305)
+     [java] 	at org.translator.java.AppInventorProject.load(AppInventorProject.java:106)
+     [java] 	at org.translator.java.AppInventorProject.load(AppInventorProject.java:68)
+     [java] 	at org.translator.java.AppInventorProject.<init>(AppInventorProject.java:58)
+     [java] 	at AppInventorToEclipseProject.main(AppInventorToEclipseProject.java:43)
+     [java] 69 [main] INFO org.reflections.Reflections - Reflections took 6 ms to scan 1 urls, producing 0 keys and 0 values 
+     [java] 
+     [java] Dec 9, 2012 3:32:25 PM com.google.appinventor.buildserver.BuildServer checkMemory
+     [java] INFO: Build 1 current used memory: 7892168 bytes
+     [java] Dec 9, 2012 3:32:25 PM com.google.appinventor.buildserver.BuildServer$2 run
+     [java] INFO: CallbackURL: http://localhost:8888/ode2/receiveEclipseProject/d7nt54qgpmoz0cl5nw81ugxy06dtgf2lup6yuo09rsudszm4m2nh0k9wbkgv4kmicb8da50i50t3sgt4v64vn63z0seue1zz1v2jmvb18v0xjrist86k1crbxlmnbz3f0h4sr88dxi/1/eclipse/Android
+     [java] Dec 9, 2012 3:32:25 PM com.google.appinventor.buildserver.BuildServer checkMemory
+     [java] INFO: Build 1 current used memory: 8473912 bytes
+     [java] Dec 9, 2012 3:32:25 PM com.google.appinventor.buildserver.BuildServer checkMemory
+     [java] INFO: Build 1 current used memory: 8303208 bytes
+     [java] Dec 9, 2012 3:32:25 PM com.google.appinventor.buildserver.BuildServer$2 run
+     [java] INFO: BUILD 1 FINISHED
