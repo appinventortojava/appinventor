@@ -36,15 +36,18 @@ public class TopPanel extends Composite {
   private static final String GALLERY_LINK_AND_TEXT =
       "<a href=\"http://gallery.appinventor.mit.edu\" target=\"_blank\">" +
       "Try the App Inventor Community Gallery (Beta)</a>";
+  private static final String ABOUT_PAGE = 
+      "<a href=\"https://sites.google.com/site/usfinnovate/about\" target=\"_blank\">" +
+      "Click here for more info.</a>";
 
   private static final String LOGO_IMAGE_URL = "/images/logo.png";
 
   private final HTML userEmail = new HTML();
   private final VerticalPanel rightPanel;  // remember this so we can add MOTD later if needed
 
-  private final HTML welcome = new HTML("Welcome to the App Inventor beta release." +
-      " Be sure to check the list of " + KNOWN_ISSUES_LINK_AND_TEXT + " and " +
-      RELEASE_NOTES_LINK_AND_TEXT + ".  " + GALLERY_LINK_AND_TEXT);
+  private final HTML welcome = new HTML("Welcome to this special 'Java Code generation' version of App Inventor." +
+      ABOUT_PAGE + " Be sure to check the list of " + KNOWN_ISSUES_LINK_AND_TEXT + " and " +
+      RELEASE_NOTES_LINK_AND_TEXT + ".");
 
 
     //This is an experimental version of App Inventor. "

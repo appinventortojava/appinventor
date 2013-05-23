@@ -853,7 +853,7 @@ public class Ode implements EntryPoint {
 
     Image dialogImage = new Image(Ode.getImageBundle().androidGreenSmall());
 
-    Grid messageGrid = new Grid(2, 1);
+    Grid messageGrid = new Grid(5, 1);
     messageGrid.getCellFormatter().setAlignment(0,
         0,
         HasHorizontalAlignment.ALIGN_JUSTIFY,
@@ -863,16 +863,32 @@ public class Ode implements EntryPoint {
         HasHorizontalAlignment.ALIGN_LEFT,
         HasVerticalAlignment.ALIGN_MIDDLE);
 
-    Label messageChunk1 = new Label("You don't have any projects yet."
+    // Label messageChunk1 = new Label("You don't have any projects yet."
+    //     + " To learn how to use App Inventor, click the \"Learn\" item"
+    //     + " at the top of the window; or to start your first project, click "
+    //     + " the \"New\" button at the upper left of the window.");
+
+    Label messageChunk1 = new Label("Special Note:");
+
+    Label messageChunk2 = new Label("The special test version of AppInventor has been relocated and the project"
+        + " database has been cleared. We apologize for the inconvenience. The old site, usfaicg.appspot.com,"
+        + " has now been shut down.");
+    Label messageChunk3 = new Label("****");
+    Label messageChunk4 = new Label(" You don't have any projects yet."
         + " To learn how to use App Inventor, click the \"Learn\" item"
         + " at the top of the window; or to start your first project, click "
         + " the \"New\" button at the upper left of the window.");
-    messageChunk1.setWidth("23em");
-    Label messageChunk2 = new Label("Happy Inventing!");
+    Label messageChunk5 = new Label("Happy Inventing!");
+    messageChunk2.setWidth("23em");
+    messageChunk4.setWidth("23em");
 
     // Add the elements to the grids and DialogBox.
     messageGrid.setWidget(0, 0, messageChunk1);
     messageGrid.setWidget(1, 0, messageChunk2);
+    messageGrid.setWidget(2, 0, messageChunk3);
+    messageGrid.setWidget(3, 0, messageChunk4);
+    messageGrid.setWidget(4, 0, messageChunk5);
+
 
     mainGrid.setWidget(0, 0, dialogImage);
     mainGrid.setWidget(0, 1, messageGrid);

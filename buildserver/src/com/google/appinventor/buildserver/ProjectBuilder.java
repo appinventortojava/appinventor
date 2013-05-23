@@ -235,29 +235,16 @@ public final class ProjectBuilder {
         File tmpProjectOutputDir2 = null;
         ArrayList<File> yailFiles = null;
 
+        // builds the ecplise project
         if(buildOption == 1) {
           LOG.info("******* entering build for project!! *******");
           List<String> sourceFiles;
 
           setEclipseBuildStatus(20);
 
+          // Extracts the files given to us from app inventor
           sourceFiles = extractProjectFiles(new ZipFile(inputZipFile), projectRoot);
-          // try {
-          //   genEclipseProject(inputZipFile,projectRoot, outputStringBuffer, errorStringBuffer);
-          // 
-          // 
-          //          
-          //   sourceFiles = extractProjectFiles(new ZipFile(inputZipFile), projectRoot);
-          // } catch (IOException e) {
-          //   LOG.severe("unexpected problem extracting project file from zip");
-          //   return Result.createFailingResult("", "Problems processing zip file.");
-          // }
-          // 
-          // outputEclipseZip = new File(outputDir,"EclipseProject.zip");
-          //                      tmpProjectOutputDir = new File(projectRoot + File.separator + "output");
-          //                      ZipOutputStream zipOS = new ZipOutputStream(new FileOutputStream(outputEclipseZip));
-          //                      ZipUtil.recursiveZip(tmpProjectOutputDir,tmpProjectOutputDir.toURI(),zipOS);
-          //                      zipOS.flush();
+
           setEclipseBuildStatus(30);
           try {
             LOG.info("******* gen yail files for project!! *******");
@@ -285,22 +272,18 @@ public final class ProjectBuilder {
           }
           setEclipseBuildStatus(80);
 
-          //File assetsDir = new File(tmpProjectOutputDir2.getAbsoluteFile().toString() + "/assets");
-          //assetsDir.mkdir();
-
           extractAssets(new ZipFile(inputZipFile), tmpProjectOutputDir2);
-          //  outputEclipseZip = new File(outputDir, "JavaFiles.zip")
-          //tmpProjectOutputDir2 = new File(projectRoot + File.separator + "src2" );
-          LOG.info("*******" + tmpProjectOutputDir2 + "*******");
+
           setEclipseBuildStatus(100);
           outputEclipseZip = new File(outputDir, projectName);
           ZipOutputStream zipOS = new ZipOutputStream(new FileOutputStream(outputEclipseZip));
-          //ZipUtil.recursiveZipInDir(tmpProjectOutputDir, tmpProjectOutputDir2.toURI(), tmpProjectOutputDir2.toURI(), zipOS);
           ZipUtil.recursiveZip(tmpProjectOutputDir2,tmpProjectOutputDir2.toURI(),zipOS);
-          LOG.info("******* zip2done *******");
+
           zipOS.flush();
           zipOS.close();
-        } else {
+        } 
+        // generats only java files 
+        else {
           List<String> sourceFiles;
 
           setEclipseBuildStatus(20);
@@ -348,13 +331,6 @@ public final class ProjectBuilder {
           }
         }
 
-        // if(tmpProjectOutputDir.isDirectory() && tmpProjectOutputDir.exists()) {
-        //                  ZipOutputStream zipOS = new ZipOutputStream(new FileOutputStream(outputEclipseZip));
-        //                  ZipUtil.recursiveZip(tmpProjectOutputDir,tmpProjectOutputDir.toURI(),zipOS);
-        //                  zipOS.flush();
-        //                  zipOS.close();
-        //              }
-
         return new Result(true, outputStringBuffer.toString(),errorStringBuffer.toString());
       } finally {
         // ********** make sure to uncomment later!!! 
@@ -367,6 +343,8 @@ public final class ProjectBuilder {
     }
   }
 
+// Outputs the path with either the eclipse project or java files deppending on the mode
+  
   private File genJavaSources(ArrayList<File> yailFiles, File projectRoot,
       StringBuffer outputStringBuffer, StringBuffer errorStringBuffer, String mode) throws IOException,
       YailToJavaGenerationException {
@@ -402,15 +380,10 @@ public final class ProjectBuilder {
       throw new YailToJavaGenerationException(innerErr.toString());
     }  
     else {
-      System.out.println("\n\n\n12344 " + innerOut);
+      // extract the project name for stdout from the java generator
       String[] projectNametmp = innerOut.toString().split("\n");
       projectName = projectNametmp[projectNametmp.length - 1]+ ".zip";
-      //projectName = projectName.replaceAll("\n", "");
-      System.out.println("\n\n\n12344 " + projectName);
     }   
-    //      String javaSource = innerOut.toString();
-    //      File javaSourceFile = new File(tmpJavaFolder, yailFile.getName().replace(".yail", ".java"));
-    //      Files.write(javaSource, javaSourceFile, Charsets.UTF_8);
 
     try {
       File dir = new File(yailFile.getParent());
@@ -425,6 +398,7 @@ public final class ProjectBuilder {
     return tmpJavaFolder2;
   }
 
+  // not used any more but keep for possible furture use / reference 
   private void genEclipseProject(File inputZipFile, File projectRoot,
       StringBuffer outputStringBuffer, StringBuffer errorStringBuffer) throws IOException,
       EclipseProjectGenerationException {
