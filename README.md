@@ -58,3 +58,6 @@ Projectbuilder (where the parser/code generator is called) appinventor/buildserv
 To update the about page:
 Show about command ( for about page ) appinventor/appengine/src/com/google/appinventor/client/explorer/commands/ShowAboutCommnad.java
 Design toolbar ( for adding the drop down menu to download java file etc ) appinventor/appengine/src/com/google/appinventor/client/DesignToolbar.java
+
+NOTE: If you would like to contribute to this project please email David Wolber at wolberd@usfca.edu 
+Also when committing updates to GIT hub please be sure to run the "ant clean" command in the root of the appinventor folder and in the buildserver folder 
